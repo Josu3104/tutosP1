@@ -11,7 +11,11 @@ public class bus {
     public void rellenarAsientos() {
         Scanner sc = new Scanner(System.in);
         for (int fila = 0; fila < asientos.length; fila++) {
-            for (int columna = 0; columna < asientos.length; columna++) {
+
+
+
+
+            for (int columna = 0; columna < asientos[fila].length; columna++) {
 
                 System.out.println("Asignando automaticamente: Fila #" + fila + " Columna #" + columna);
 
@@ -27,6 +31,9 @@ public class bus {
                 pasajero.setPosicion(posicion);
 
             }
+
+
+
         }
         sc.close();
     }
